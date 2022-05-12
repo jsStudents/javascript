@@ -93,4 +93,7 @@ const newSomeArr = someArr.flat();  // [ 1, 2, 3, 'evgen', true ]
 arr = new Array(10);
 arr.fill(55, 0, 10);
 
+// 27: Массив как строка
+console.log(arr.toString());
+
 
