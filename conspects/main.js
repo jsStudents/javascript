@@ -1,4 +1,5 @@
-let name = 'John';
-console.log(name);
-name = !!name;
-console.log(name);
+const user = {
+    name: 'John',
+    age: 30,
+
+}
