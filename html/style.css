@@ -1,0 +1,27 @@
+html {
+    font-size: 25px;
+}
+h1 {
+    color: red;
+    font-size: 2rem; /* 50px относительно html*/
+}
+h2 {
+    height: 20vmax;
+    width: 20vmin;
+}
+p {
+    width: 500px;
+    height: 50%; /* 200px относительно родительского*/
+    color: magenta;
+    font-size: 2em; /* 20px относительно родительского*/
+}
+span {
+    font-size: 25px;
+    height: 20vh;
+    width: 20vw;
+}
+div {
+    background-color: orange;
+    height: 400px;
+    font-size: 10px;
+}

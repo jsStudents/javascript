@@ -1,0 +1,32 @@
+.first {
+    position: absolute;
+    top: 800px;
+    bottom: 0;
+    left: 145px;
+    right: 145px;
+    background-color: aqua;
+}
+.second {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 700px;
+    background-color: orange;
+}
+.third {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    right: 100px;
+    bottom: 800px;
+    background-color: red;
+}
+.fourteen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 700px;
+    right: 0;
+    background-color: fuchsia;
+}
