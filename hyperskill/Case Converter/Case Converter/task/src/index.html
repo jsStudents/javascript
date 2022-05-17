@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Converter</title>
+</head>
+<body>
+<div class="title"><h1>Case Converter</h1></div>
+<main>
+    <label for=""></label><textarea name="" id="" cols="100" rows="20"></textarea>
+    <div class="buttons">
+        <button id="upper-case">Upper Case</button>
+        <button id="lower-case">Lower Case</button>
+        <button id="proper-case">Proper Case</button>
+        <button id="sentence-case">Sentence Case</button>
+        <button id="save-text-file" >Save Text File</button>
+    </div>
+</main>
+<script>
+    const userText = document.querySelector("textarea");
+    const upperCaseButton = document.querySelector("#upper-case");
+    const lowerCaseButton = document.querySelector("#lower-case");
+    const properCaseButton = document.querySelector("#proper-case");
+    const sentenceCaseButton = document.querySelector("#sentence-case");
+
+
+    upperCaseButton.addEventListener('click', function () {
+        let text = userText.value;
+        userText.value = '';
+        userText.value = text.toUpperCase();
+    });
+
+    lowerCaseButton.addEventListener('click', function () {
+        let text = userText.value;
+        userText.value = '';
+        userText.value = text.toLowerCase();
+    });
+
+    properCaseButton.addEventListener('click', function () {
+        let text = userText.value;
+        let words = text.split(' ');
+        words.forEach((word, index) => {
+            words[index] = word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+        })
+        userText.value = '';
+        userText.value = words.join(' ');
+    });
+
+    sentenceCaseButton.addEventListener('click', function () {
+        let text = userText.value;
+        let sentences = text.split('. ');
+        sentences.forEach((sentence, index) => {
+            sentences[index] = sentence.slice(0, 1).toUpperCase() + sentence.slice(1).toLowerCase();
+        })
+        userText.value = '';
+        userText.value = sentences.join('. ');
+    });
+
+
+
+
+    document.getElementById("save-text-file").addEventListener("click", function() {
+        let text = document.querySelector("textarea").value;
+        let download = document.createElement('a');
+        download.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        download.download = "text" + ".txt";
+        document.body.appendChild(download);
+        download.click();
+        document.body.removeChild(download);
+    });
+
+    // Start file download.
+    download("hello.txt","This is the content of my file :)");
+</script>
+</body>
+</html>
