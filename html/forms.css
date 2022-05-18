@@ -1,0 +1,34 @@
+#dotted {
+    border-style: dotted;
+    border-color: red;
+    border-width: 20px;
+}
+#dashed {
+    border-style: dashed;
+    border-color: orange;
+    border-width: 10px;
+}
+#solid {
+    border-style: solid;
+    border-color: yellow;
+}
+#double {
+    border-top: 10px double green;
+}
+#groove {
+    border-bottom: 10px groove skyblue;
+    border-right: 10px groove skyblue;
+}
+#ridge {
+    border-bottom: 10px ridge blue;
+}
+#inset {
+    border-left: 10px inset indigo;
+}
+#outset {
+    border: 5px outset black;
+}
+.styled-link {
+    font-size: 20px;
+    color: rgba(255, 255, 0, 0.5);
+}
