@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employ Profile</title>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+    <div>
+        <p>First name</p>
+        <input tabindex="1" type="text" name="firstName" value="" placeholder="first name">
+    </div>
+    <div>
+        <p>Last name</p>
+        <input tabindex="2" type="text" name="lastName" value="" placeholder="last name">
+    </div>
+    <div>
+        <p>Phone number</p>
+        <input tabindex="3" type="tel" name="phoneNumber" value="" placeholder="phone number">
+    </div>
+    <div>
+        <p>Salary</p>
+        <input tabindex="4" type="tel" name="salary" value="" placeholder="salary">
+    </div>
+    <div>
+        <p>Is Shooter ?</p>
+        <div>
+            <input tabindex="5" type="radio" name="isShooter" value="true">Yes
+        </div>
+        <div>
+            <input tabindex="5" checked type="radio" name="isShooter" value="false">No
+        </div>
+    </div>
+    <br>
+    <div>
+        <select tabindex="6" name="position">
+            <option value="supervisor">Supervisor</option>
+            <option value="receiver">Receiver</option>
+            <option value="sorter">Sorter</option>
+            <option value="loaderDriver">Loader Driver</option>
+            <option selected value="loader">Loader</option>
+        </select>
+    </div>
+    <div>
+        <p>Knows</p>
+        <div>
+            <input tabindex="7" type="checkbox" name="titan" value="true">Ti
+        </div>
+        <div>
+            <input tabindex="8" type="checkbox" name="rapidSteel" value="true">Rapid steel
+        </div>
+        <div>
+            <input tabindex="9" type="checkbox" name="stainlessSteel" value="true">Stainless steel
+        </div>
+        <div>
+            <input tabindex="10" disabled type="checkbox" name="stanum" value="true">Sn
+        </div>
+        <div>
+            <input tabindex="11" type="checkbox" name="other" value="true">Other...
+        </div>
+    </div>
+    <div>
+        <p>Additional information</p>
+        <div>
+            <textarea tabindex="12" name="additionalInformation" placeholder="Additional information"></textarea>
+        </div>
+    </div>
+    <div>
+        <p>Send foto</p>
+        <input type="file" name="foto">
+    </div>
+    <div>
+        <p>Action</p>
+        <button tabindex="14" type="submit">Submit</button>
+        <button tabindex="15" type="reset">Reset</button>
+    </div>
+</form>
+</body>
+</html>

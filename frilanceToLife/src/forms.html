@@ -9,20 +9,49 @@
 <body>
   <div>
     <div>
-      <form action="#" method="post" enctype="multipart/form-data"></form>  <!-- Простой текст -->
+      <form action="#" method="post" enctype="multipart/form-data">
       <div>
-        <input type="text" name="username" value="">
+        <label>
+          <input type="text" name="username" value="" placeholder="username" tabindex="1">
+        </label>
       </div>
       <div>
-        <input type="password" name="userpassword" value="">
+        <label>
+          <input type="password" name="userpassword" value="" placeholder="password" tabindex="2">
+        </label>
       </div>
       <div>
-        <input type="tel" name="phoneNumber" value="">
+        <label>
+          <input disabled type="tel" name="phoneNumber" value="">
+        </label>
       </div>
       <div>
-        <p><input checked type="radio" name="beer" value="lager">Светлое пиво</p>
-        <p><input type="radio" name="beer" value="dark">Темное пиво</p>
+        <p><label>
+          <input checked type="radio" name="beer" value="lager">
+        </label>Светлое пиво</p>
+        <p><label>
+          <input type="radio" name="beer" value="dark">
+        </label>Темное пиво</p>
       </div>
+      <div>
+        <p><input type="checkbox" name="car" value="yes" id="have_car">Do you have a car</p>
+        <p><input checked type="checkbox" name="evgen" value="yes" id="evgen_fogot">Is Evgen foggot?</p>
+        <p><input type="file" name="foto" id="foto_file"></p>
+      </div>
+      <div>
+        <textarea name="text" placeholder="who is evgen"></textarea>
+      </div>
+      <div>
+        <select name="evgenNickname">
+          <option value="foggot">Foggot</option>
+          <option selected value="retard">Retard</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      </form>
     </div>
   </div>
 </body>
